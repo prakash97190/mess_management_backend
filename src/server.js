@@ -1,10 +1,9 @@
-import mongoose from "mongoose";
 
-const app = require("./app");
-
-const PORT = process.env.PORT || 5000;
+import express from "express";
+const port = process.env.PORT || 5000;
+const app = express();
 
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+  console.log(`Server running on port ${port}`);
 });
 
