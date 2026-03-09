@@ -2,9 +2,9 @@
   "name": "hostel-management-server",
   "version": "1.0.0",
   "description": "MERN backend for Hostel Management System",
-  "main": "server.js",
+  "main": "server/server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node server/server.js",
     "dev": "nodemon server.js"
   },
   "dependencies": {
