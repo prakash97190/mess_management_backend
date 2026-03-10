@@ -1,10 +1,5 @@
 // controllers/authController.js
 // FRONTEND LINK: Called from Login.tsx via POST /api/auth/login
-//   const res = await fetch('http://localhost:5000/api/auth/login', {
-//     method: 'POST', headers: { 'Content-Type': 'application/json' },
-//     body: JSON.stringify({ rollNumber, password, role })
-//   });
-//   const data = await res.json(); // { token, user }
 
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');

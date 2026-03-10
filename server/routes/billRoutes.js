@@ -9,13 +9,13 @@ const {
   getStudentBills, 
   saveMonthlyCosts, 
   generateMonthlyBills,
-  getMonthlyCost            // add this
+  getMonthlyCost            
 } = require('../controllers/billController');
 
 const { auth, adminOnly } = require('../middleware/auth');
 
 router.put('/monthly-cost', auth, adminOnly, saveMonthlyCosts);
-router.get('/monthly-cost', auth, adminOnly, getMonthlyCost);   // 👈 ADD THIS
+router.get('/monthly-cost', auth, adminOnly, getMonthlyCost); 
 router.post('/generate-monthly', auth, adminOnly, generateMonthlyBills);
 
 router.get("/student/:studentId", getStudentBills);

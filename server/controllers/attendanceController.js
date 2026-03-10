@@ -8,7 +8,7 @@ const Attendance = require('../models/Attendance');
 exports.getByUser = async (req, res) => {
   try {
     const { userId } = req.params;
-    const { month } = req.query; // e.g. "2025-01"
+    const { month } = req.query; // e.g. "2026-01"
     const filter = { userId };
     if (month) filter.date = { $regex: `^${month}` };
     const records = await Attendance.find(filter).sort({ date: 1 });
